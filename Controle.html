@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BancoBB.controle.com.br</title>
+    <link rel="stylesheet" href="Controle.css">
+</head>
+<body>
+        <header>
+            <div>
+                <p>Banco BB</p>
+                <p>esse é seu controle</p>
+            </div>
+
+            <h2>Banco do Brasil</h2>
+        </header>
+
+        <main>
+            <div class="resumo">
+                <div>
+                    Entradas: R$
+                    <span class="entradas">0.00</span>
+                </div>
+                <div>
+                    Saídas: R$
+                    <span class="saidas">0.00</span>
+                </div>
+                <div>
+                    Total: R$
+                    <span class="total">0.00</span>
+                </div>
+            </div>
+            <div class="novoItem">
+                <div class="form">
+                    <div class="divDesc">
+                        <label for="desc">Descrição</label>
+                        <input class="inputbox" type="text" id="desc">
+                    </div>
+                    <div class="divValor">
+                        <label for="valor">Valor</label>
+                        <input class="inputbox" type="number" id="valor">
+                    </div>
+                    <div class="divTipo">
+                        <label for="tipo"></label>
+                        <select id="tipo">
+                            <option>Entrada</option>
+                            <option>Saida</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="button1" id="btnNovo">Incluir</button>
+            </div>
+            <div class="divTabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th class="columnValor">Valor</th>
+                            <th class="columnTipo">Tipo</th>
+                            <th class="columnAcao"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+
+    <script src="Controle.js"></script>
+
+
+</body>
+</html>
